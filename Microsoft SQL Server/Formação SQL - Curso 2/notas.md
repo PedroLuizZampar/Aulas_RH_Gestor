@@ -106,3 +106,175 @@
 ## Estruturas condicionais
 
 ![alt text](image-27.png)
+
+---
+
+## JOINs
+
+### INNER JOIN
+
+![alt text](image-28.png)
+
+---
+
+### LEFT JOIN
+
+![alt text](image-29.png)
+
+---
+
+### RIGHT JOIN
+
+![alt text](image-30.png)
+
+---
+
+### FULL JOIN
+
+![alt text](image-31.png)
+
+### CROSS JOIN
+
+![alt text](image-32.png)
+
+---
+
+## UNION
+
+![alt text](image-33.png)
+---
+![alt text](image-34.png)
+
+---
+
+## SUBQUERYs
+
+![alt text](image-35.png)
+---
+![alt text](image-36.png)
+
+---
+
+## VIEWs
+
+![alt text](image-37.png)
+---
+![alt text](image-38.png)
+---
+![alt text](image-39.png)
+
+---
+
+## Funções de String
+
+| **Comando**         | **Descrição**                                                                                 | **Exemplo de Uso**                                                                      |
+|----------------------|---------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------|
+| `LEN`               | Retorna o número de caracteres em uma string (sem contar espaços à direita).                | `SELECT LEN('ChatGPT'); -- Retorna 7`                                                 |
+| `DATALENGTH`        | Retorna o tamanho da string em bytes.                                                        | `SELECT DATALENGTH('ChatGPT'); -- Retorna 7 (para VARCHAR)`                          |
+| `LEFT`              | Retorna os primeiros N caracteres de uma string.                                             | `SELECT LEFT('ChatGPT', 4); -- Retorna 'Chat'`                                       |
+| `RIGHT`             | Retorna os últimos N caracteres de uma string.                                               | `SELECT RIGHT('ChatGPT', 3); -- Retorna 'GPT'`                                       |
+| `SUBSTRING`         | Retorna parte de uma string a partir de uma posição específica.                              | `SELECT SUBSTRING('ChatGPT', 2, 3); -- Retorna 'hat'`                                |
+| `CHARINDEX`         | Retorna a posição de uma substring dentro de outra string.                                   | `SELECT CHARINDEX('G', 'ChatGPT'); -- Retorna 5`                                     |
+| `PATINDEX`          | Retorna a posição da primeira ocorrência de um padrão dentro de uma string.                  | `SELECT PATINDEX('%G%', 'ChatGPT'); -- Retorna 5`                                    |
+| `REPLACE`           | Substitui todas as ocorrências de uma substring por outra.                                   | `SELECT REPLACE('ChatGPT', 'GPT', 'Bot'); -- Retorna 'ChatBot'`                      |
+| `STUFF`             | Substitui parte de uma string por outra, a partir de uma posição específica.                 | `SELECT STUFF('ChatGPT', 5, 3, 'Bot'); -- Retorna 'ChatBot'`                         |
+| `UPPER`             | Converte uma string para maiúsculas.                                                         | `SELECT UPPER('ChatGPT'); -- Retorna 'CHATGPT'`                                      |
+| `LOWER`             | Converte uma string para minúsculas.                                                         | `SELECT LOWER('ChatGPT'); -- Retorna 'chatgpt'`                                      |
+| `LTRIM`             | Remove espaços em branco à esquerda de uma string.                                           | `SELECT LTRIM('  ChatGPT'); -- Retorna 'ChatGPT'`                                    |
+| `RTRIM`             | Remove espaços em branco à direita de uma string.                                            | `SELECT RTRIM('ChatGPT  '); -- Retorna 'ChatGPT'`                                    |
+| `FORMAT`            | Formata um valor de acordo com um formato especificado.                                      | `SELECT FORMAT(GETDATE(), 'dd/MM/yyyy'); -- Retorna data formatada`                  |
+| `CONCAT`            | Concatena duas ou mais strings.                                                              | `SELECT CONCAT('Chat', 'GPT'); -- Retorna 'ChatGPT'`                                 |
+| `CONCAT_WS`         | Concatena strings com um separador definido.                                                 | `SELECT CONCAT_WS('-', '2025', '01', '29'); -- Retorna '2025-01-29'`                 |
+| `QUOTENAME`         | Adiciona colchetes ou aspas duplas a uma string.                                             | `SELECT QUOTENAME('ChatGPT'); -- Retorna '[ChatGPT]'`                                |
+| `STRING_AGG`        | Concatena valores de uma coluna em uma única string, separados por um delimitador.          | `SELECT STRING_AGG(nome, ', ') FROM usuarios; -- Retorna 'João, Maria, Pedro'`       |
+| `ASCII`            | Retorna o valor ASCII do primeiro caractere de uma string.                                   | `SELECT ASCII('A'); -- Retorna 65`                                                   |
+| `CHAR`             | Retorna o caractere correspondente a um código ASCII.                                        | `SELECT CHAR(65); -- Retorna 'A'`                                                    |
+| `DIFFERENCE`       | Compara o som das palavras e retorna um valor de similaridade.                               | `SELECT DIFFERENCE('Chat', 'Cat'); -- Retorna 4`                                     |
+| `NCHAR`           | Retorna o caractere UNICODE correspondente ao código fornecido.                               | `SELECT NCHAR(65); -- Retorna 'A'`                                                   |
+| `REPLICATE`       | Repete uma string um número específico de vezes.                                              | `SELECT REPLICATE('A', 5); -- Retorna 'AAAAA'`                                       |
+| `REVERSE`        | Retorna a string com os caracteres na ordem inversa.                                          | `SELECT REVERSE('ChatGPT'); -- Retorna 'TPGtahC'`                                   |
+| `SOUNDEX`        | Retorna um código fonético da string.                                                          | `SELECT SOUNDEX('Chat'); -- Retorna 'C300'`                                         |
+| `SPACE`          | Retorna uma string de espaços em branco do tamanho especificado.                               | `SELECT SPACE(5) + 'ChatGPT'; -- Retorna '     ChatGPT'`                            |
+| `STR`            | Converte um número para uma string.                                                            | `SELECT STR(123.45, 6, 2); -- Retorna '123.45'`                                     |
+| `STRING_SPLIT`   | Divide uma string com base em um delimitador e retorna os valores como linhas de tabela.      | `SELECT * FROM STRING_SPLIT('A,B,C', ',');`                                         |
+| `STRING_ESCAPE`  | Retorna uma string JSON escapada.                                                              | `SELECT STRING_ESCAPE('{"nome": "João"}', 'json');`                                 |
+| `TRANSLATE`      | Substitui um ou mais caracteres em uma string por outros caracteres especificados.              | `SELECT TRANSLATE('abc', 'ac', 'xz'); -- Retorna 'xbz'`                            |
+| `UNICODE`        | Retorna o código UNICODE do primeiro caractere de uma string.                                  | `SELECT UNICODE('A'); -- Retorna 65`                                                |
+
+---
+
+## Funções de Data
+
+| **Comando**        | **Descrição**                                                                 | **Exemplo de Uso**                                                   |
+|--------------------|-----------------------------------------------------------------------------|---------------------------------------------------------------------|
+| `GETDATE`         | Retorna a data e hora atuais do servidor.                                   | `SELECT GETDATE(); -- Retorna '2025-01-29 14:30:00.000'`           |
+| `SYSDATETIME`     | Retorna a data e hora atuais com mais precisão que `GETDATE()`.             | `SELECT SYSDATETIME(); -- Retorna '2025-01-29 14:30:00.1234567'`   |
+| `CURRENT_TIMESTAMP` | Retorna a data e hora atuais, equivalente a `GETDATE()`.                 | `SELECT CURRENT_TIMESTAMP;`                                         |
+| `GETUTCDATE`      | Retorna a data e hora atuais no formato UTC.                               | `SELECT GETUTCDATE(); -- Retorna '2025-01-29 17:30:00.000'`        |
+| `DATETIME2`       | Tipo de dado que suporta maior precisão para data e hora.                  | `DECLARE @data DATETIME2 = SYSDATETIME();`                         |
+| `DATE`            | Tipo de dado que armazena apenas a data sem a hora.                        | `DECLARE @data DATE = GETDATE();`                                  |
+| `TIME`            | Tipo de dado que armazena apenas a hora sem a data.                        | `DECLARE @hora TIME = SYSDATETIME();`                              |
+| `DATETIMEOFFSET`  | Tipo de dado que inclui o fuso horário junto com a data e hora.            | `DECLARE @data DATETIMEOFFSET = SYSDATETIMEOFFSET();`              |
+| `YEAR`           | Retorna o ano de uma data especificada.                                     | `SELECT YEAR('2025-01-29'); -- Retorna 2025`                      |
+| `MONTH`          | Retorna o mês de uma data especificada.                                     | `SELECT MONTH('2025-01-29'); -- Retorna 1`                         |
+| `DAY`            | Retorna o dia do mês de uma data especificada.                              | `SELECT DAY('2025-01-29'); -- Retorna 29`                          |
+| `DATEPART`       | Retorna uma parte específica de uma data.                                  | `SELECT DATEPART(HOUR, GETDATE()); -- Retorna a hora atual`       |
+| `DATENAME`       | Retorna uma parte da data como texto.                                      | `SELECT DATENAME(MONTH, GETDATE()); -- Retorna 'Janeiro'`          |
+| `EOMONTH`        | Retorna o último dia do mês da data especificada.                         | `SELECT EOMONTH(GETDATE()); -- Retorna '2025-01-31'`              |
+| `SWITCHOFFSET`   | Ajusta o fuso horário de um `DATETIMEOFFSET`.                             | `SELECT SWITCHOFFSET(SYSDATETIMEOFFSET(), '-03:00');`             |
+| `TODATETIMEOFFSET` | Converte uma data normal para `DATETIMEOFFSET` com um fuso horário.      | `SELECT TODATETIMEOFFSET(GETDATE(), '-03:00');`                   |
+| `DATEADD`        | Adiciona ou subtrai um valor de uma parte da data.                         | `SELECT DATEADD(DAY, 10, GETDATE()); -- Adiciona 10 dias`         |
+| `DATEDIFF`       | Retorna a diferença entre duas datas em uma unidade específica.           | `SELECT DATEDIFF(DAY, '2025-01-01', '2025-01-29'); -- Retorna 28` |
+| `ISDATE`         | Verifica se uma expressão é uma data válida (retorna 1 para verdadeiro).   | `SELECT ISDATE('2025-01-29'); -- Retorna 1`                       |
+| `FORMAT`         | Formata uma data de acordo com um padrão especificado.                    | `SELECT FORMAT(GETDATE(), 'dd/MM/yyyy'); -- Retorna '29/01/2025'` |
+
+---
+
+## Funções Matemáticas
+
+| **Comando**        | **Descrição**                                                               | **Exemplo de Uso**                                      |
+|--------------------|---------------------------------------------------------------------------|--------------------------------------------------------|
+| `ABS`             | Retorna o valor absoluto de um número.                                    | `SELECT ABS(-10); -- Retorna 10`                      |
+| `CEILING`         | Retorna o menor número inteiro maior ou igual ao valor especificado.      | `SELECT CEILING(4.2); -- Retorna 5`                   |
+| `FLOOR`           | Retorna o maior número inteiro menor ou igual ao valor especificado.      | `SELECT FLOOR(4.8); -- Retorna 4`                     |
+| `ROUND`           | Arredonda um número para a precisão especificada.                        | `SELECT ROUND(4.567, 2); -- Retorna 4.57`             |
+| `POWER`           | Retorna um número elevado a uma potência específica.                     | `SELECT POWER(2, 3); -- Retorna 8`                    |
+| `SQRT`            | Retorna a raiz quadrada de um número.                                    | `SELECT SQRT(16); -- Retorna 4`                       |
+| `EXP`             | Retorna o valor de "e" elevado à potência do número especificado.        | `SELECT EXP(1); -- Retorna 2.7182818`                 |
+| `LOG`             | Retorna o logaritmo natural (base e) de um número.                       | `SELECT LOG(10); -- Retorna 2.302585`                 |
+| `LOG10`           | Retorna o logaritmo de base 10 de um número.                             | `SELECT LOG10(100); -- Retorna 2`                     |
+| `PI`              | Retorna o valor de π (pi).                                               | `SELECT PI(); -- Retorna 3.14159265358979`            |
+| `RADIANS`         | Converte um valor em graus para radianos.                                | `SELECT RADIANS(180); -- Retorna 3.14159265358979`    |
+| `DEGREES`         | Converte um valor em radianos para graus.                               | `SELECT DEGREES(PI()); -- Retorna 180`                |
+| `SIGN`            | Retorna o sinal de um número (-1, 0 ou 1).                               | `SELECT SIGN(-10); -- Retorna -1`                     |
+| `RAND`            | Retorna um número aleatório entre 0 e 1.                                | `SELECT RAND(); -- Exemplo de saída: 0.834572`        |
+| `SIN`             | Retorna o seno de um ângulo especificado em radianos.                   | `SELECT SIN(PI()/2); -- Retorna 1`                    |
+| `COS`             | Retorna o cosseno de um ângulo especificado em radianos.                | `SELECT COS(PI()); -- Retorna -1`                     |
+| `TAN`             | Retorna a tangente de um ângulo especificado em radianos.               | `SELECT TAN(PI()/4); -- Retorna 1`                    |
+| `ASIN`            | Retorna o arco seno de um número.                                       | `SELECT ASIN(1); -- Retorna 1.5707963 (PI/2)`         |
+| `ACOS`            | Retorna o arco cosseno de um número.                                    | `SELECT ACOS(0); -- Retorna 1.5707963 (PI/2)`         |
+| `ATAN`            | Retorna o arco tangente de um número.                                   | `SELECT ATAN(1); -- Retorna 0.785398 (PI/4)`         |
+| `ATN2`           | Retorna o arco tangente de dois valores (X e Y).                        | `SELECT ATN2(1, 1); -- Retorna 0.785398 (PI/4)`      |
+| `DIV`            | Realiza a divisão inteira entre dois números.                           | `SELECT 10 / 3; -- Retorna 3 (divisão inteira)`      |
+| `MOD`            | Retorna o resto da divisão entre dois números.                          | `SELECT 10 % 3; -- Retorna 1 (resto da divisão)`     |
+
+---
+
+## Funções de Coversão de Dados
+
+| **Comando**       | **Descrição**                                                              | **Exemplo de Uso**                                      |
+|-------------------|--------------------------------------------------------------------------|--------------------------------------------------------|
+| `CAST`           | Converte um valor para um tipo de dado específico.                       | `SELECT CAST(10 AS FLOAT); -- Retorna 10.0`           |
+| `CONVERT`        | Converte um valor para um tipo de dado específico, permitindo formatos.  | `SELECT CONVERT(VARCHAR, GETDATE(), 103); -- Retorna '29/01/2025'` |
+| `TRY_CAST`       | Tenta converter um valor e retorna NULL se a conversão falhar.          | `SELECT TRY_CAST('ABC' AS INT); -- Retorna NULL`      |
+| `TRY_CONVERT`    | Tenta converter um valor com formato específico e retorna NULL se falhar. | `SELECT TRY_CONVERT(DATE, '2025-01-29'); -- Retorna '2025-01-29'` |
+| `PARSE`         | Converte strings formatadas para tipos numéricos ou data.                | `SELECT PARSE('29/01/2025' AS DATE USING 'pt-BR'); -- Retorna '2025-01-29'` |
+| `TRY_PARSE`     | Tenta converter strings formatadas para tipos numéricos ou data, retornando NULL se falhar. | `SELECT TRY_PARSE('ABC' AS INT USING 'en-US'); -- Retorna NULL` |
+| `STR`           | Converte um número para string, especificando o tamanho e casas decimais. | `SELECT STR(123.456, 6, 2); -- Retorna '123.46'`      |
+| `FORMAT`        | Formata um valor numérico ou de data para string personalizada.          | `SELECT FORMAT(1234.56, 'C', 'en-US'); -- Retorna '$1,234.56'` |
+| `UNICODE`       | Retorna o código Unicode do primeiro caractere de uma string.            | `SELECT UNICODE('A'); -- Retorna 65`                  |
+| `ASCII`         | Retorna o código ASCII do primeiro caractere de uma string.              | `SELECT ASCII('A'); -- Retorna 65`                    |
+
+---
+
+![alt text](<SQL Server Data Type Conversion Chart.png>)
