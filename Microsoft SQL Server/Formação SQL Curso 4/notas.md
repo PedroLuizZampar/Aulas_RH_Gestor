@@ -18,6 +18,7 @@
 
 - ### Declarando Variáveis
     ![alt text](image-5.png)
+    ---
     ![alt text](image-6.png)
 
 ---
@@ -61,25 +62,35 @@
 
 - ### Tabelas Temporárias
     ![alt text](image-10.png)
+    ---
     ![alt text](image-11.png)
 
 ---
 
 - ### Funções
     ![alt text](image-12.png)
+    ---
     ![alt text](image-13.png)
+    ---
     ![alt text](image-14.png)
+    ---
     ![alt text](image-15.png)
+    ---
     ![alt text](image-16.png)
+    ---
     ![alt text](image-17.png)
+    ---
     ![alt text](image-18.png)
+    ---
     ![alt text](image-19.png)
 
     ---
 
 - ### Stored Procedures
     ![alt text](image-20.png)
+    ---
     ![alt text](image-22.png)
+    ---
     ![alt text](image-23.png)
 
     ---
@@ -126,8 +137,17 @@
 
 - ### Tratamento de Erros
     ![alt text](image-30.png)
+    ---
     ![alt text](image-31.png)
 
     - #### TRY-CATCH
         ![alt text](image-32.png)
 
+- ### Cursor
+    ![alt text](image-33.png)
+    ---
+    ![alt text](image-34.png)
+
+- ### Criando números aleatórios
+    ![alt text](image-35.png)
+    [EXERCÍCIO](/Microsoft%20SQL%20Server/Formação%20SQL%20Curso%204/Exercicios/GERACAO_ENTIDADES_ALEATORIAS.sql)
