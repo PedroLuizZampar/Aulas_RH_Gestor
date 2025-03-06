@@ -119,8 +119,78 @@
 - #### Aprenda tudo que puder da outra parte
     - Busque conhecer o cliente e aproximá-lo cada vez mais
 
+### 2. Estágio Preliminar e Abertura da Negociação
+- #### Estágio Preliminar
+    - Criar um clima positivo
+    - Resolver possíveis conflitos pré-existentes
+    - Separar o problema das pessoas
+    - Esclareça possíveis dúvidas/boatos
+    - Concentre no alvo e nos objetivos em comum identificados no planejamento
+- #### Abertura da Negociação
+    - Definir a natureza e os parâmetros a serem negociados
+    - Espere mais e peça mais
+    - Declare claramente suas posições
+    - Quando discordar, dê primeiro as razões ou explicações para desacordo e em seguida informe sobre o que discorda
+
+### 3. Exploração da Negociação
+- Convencer a outra parte na direção dos seus objetivos
+- Confirmar os entendimentos alcançados
+- Fazer perguntas para identificar e determinar valores alternativos
+- Revele informações sobre necessidades importantes
+
+### 4. Fechamento e Reconstrução da Negociação
+- #### Fechamento
+    - Estabelecer um acordo entre as partes
+    - Evitar concessões unilaterais próximo do final de uma negociação
+    - Faça pausas para rever a proposta de acordo da outra parte
+    - Peça alguma coisa em troca quando fizer uma concessão
+    - Evite ser colocado contra a parede
+- #### Reconstrução da Negociação
+    - Concluir a negociação com um clima agradável
+    - Assegurar que não ficou nenhum desconforto entre as partes
+
+---
+
+## Quadrantes da Negociação
+
+![alt text](image-16.png)
+
+---
+
+## A Fórmula do Sucesso
+
+![alt text](image-17.png)
+
+#### Nenhum valor pode ser 0, senão zera toda a equação!
+
+![alt text](image-18.png)
+
+---
+
+## Tipos de Poder na Negociação
+
+![alt text](image-19.png)
+![alt text](image-20.png)
+![alt text](image-20.png)
+![alt text](image-21.png)
+
+---
+
+## Fontes de Poder na Negociação
+
+- ### Concorrência
+- ### Legitimidade
+- ### Riscos
+- ### Compromisso
+- ### Especialização
+- ### Conhecimento Sobre as Necessidades das Partes
+- ### Investimento
+- ### Recompensa/Punição
+- ### Identificação
+
 ---
 
 ## Cenário do Curso
 ![alt text](image-5.png)
 ![alt text](image-14.png)
+![alt text](image-15.png)
