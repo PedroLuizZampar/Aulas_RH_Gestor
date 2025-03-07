@@ -187,6 +187,44 @@
 - ### Investimento
 - ### Recompensa/Punição
 - ### Identificação
+- ### Moralidade
+- ### Precedente
+- ### Persistência
+- ### Capacidade Persuasiva
+- ### Atitude
+
+---
+
+## Identificando sua MACNA
+
+> #### MACNA é o melhor resultado que pode se obter em uma negociação antes que a outra parte desista
+
+- Identifique todos os aspectos a serem negociados
+- Busque alternativas
+- Não tenha pressa, seja paciente
+
+- ### Exemplos de MACNAs
+    - Lista de requisitos
+    - Check list de necessidades
+    - Pontos importantes e pontos fracos
+
+---
+
+## Mude a sua Perspectiva
+
+- Torne o processo de negociação um desafio divertido
+- Encare o processo como um jogo
+- Faça da negociação uma atividade prazerosa
+- Coloque-se no lugar do outro
+
+---
+
+## Foque no Processo
+
+- A vitória é algo pessoal
+- A vitória acontece quando você supera um obstáculo que está em você
+- É superar um obstáculo que você põem em sua frente
+- Para superar esse obstáculo, foque mais no processo e menos no resultado
 
 ---
 
@@ -194,3 +232,5 @@
 ![alt text](image-5.png)
 ![alt text](image-14.png)
 ![alt text](image-15.png)
+![alt text](image-22.png)
+![alt text](image-23.png)
