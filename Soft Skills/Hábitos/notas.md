@@ -40,9 +40,33 @@ Temos hábitos para poupar o cérebro das tomadas de decisões corriqueiras, ou 
 ### Método SMART
 
 #### Especifidade (Specific)
+- > Especifique o que você almeja alcançar
 - Por que fazer algo?
 - O que fazer?
 - Como fazer?
 
 #### Mensurável (Mensurable)
-- Estimativas
+- > Como você pretende mensurar suas metas?
+- Quais as estimativas?
+
+#### Alcançável (Attainable)
+- > Estimar é complicado, mas pense em metas racionais, alcançáveis
+- O objetivo pode ser alcançada? 
+
+#### Relevante (Relevant)
+- > Faz sentido? O que vai te agregar?
+- Meu objetivo é relevante?
+- O que faço depois que atingi?
+- O que me motiva a atingi-lo?
+
+#### Tempo (Time-related)
+- > Estabeleça prazos!
+- Em quanto tempo posso alcançar o objetivo?
+- Quanto tempo em cada meta?
+
+### Quanto tempo demora para criar um novo hábito?
+
+> "Um hábito pode ser incorporado entre 18 dias e 8 meses"
+
+> Construir novos hábitos não é um processo de tudo ou nada!
+
